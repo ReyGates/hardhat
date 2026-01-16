@@ -8,7 +8,7 @@ WORKDIR /usr/hardhat
 COPY package.json package-lock.json* ./
 
 # Install dependencies (including the latest Hardhat)
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Copy the rest of the project files
 COPY . .
